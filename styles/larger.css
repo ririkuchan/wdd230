@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
