@@ -1,3 +1,4 @@
+/* 全体のスタイル */
 body {
     font-family: "Poetsen One", sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f3f1f1;
 }
 
+/* ヘッダー */
 header {
     display: flex;
     align-items: center;
@@ -22,26 +24,28 @@ header img {
     object-fit: cover;
 }
 
+/* ナビゲーション */
 nav {
     background-color: #4e5255;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.3em;
+    padding: 0.5em;
 }
 
-nav ul {
+/* メニューリスト */
+.nav-menu {
     display: flex;
     list-style: none;
     padding: 0;
-    justify-content: space-around;
 }
 
-nav ul li {
+/* メニュー項目 */
+.nav-menu li {
     margin: 0 10px;
 }
 
-nav ul li a {
+.nav-menu li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -49,12 +53,49 @@ nav ul li a {
     display: inline-block;
 }
 
-nav a:hover {
+.nav-menu a:hover {
     color: #fc94c4;
     text-decoration: underline;
-    /* 下線を追加 */
 }
 
+/* ハンバーガーボタン */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* スマホ用（600px以下） */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #4e5255;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        padding: 15px 0;
+    }
+}
+
+/* メインコンテンツ */
 main {
     padding: 20px;
     max-width: 800px;
@@ -63,10 +104,10 @@ main {
 
 main img {
     width: 300px;
-    height: 100px;
     height: auto;
 }
 
+/* フッター */
 footer {
     text-align: center;
     padding: 10px;

@@ -1,12 +1,17 @@
 @media (min-width: 768px) {
+
     nav {
         justify-content: center;
     }
 
     nav ul {
+        display: flex !important;
         justify-content: center;
         width: 100%;
-        /* Ensures full-width alignment */
+    }
+
+    .hamburger {
+        display: none !important;
     }
 
     header {
