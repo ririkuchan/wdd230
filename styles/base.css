@@ -28,35 +28,26 @@ header img {
 nav {
     background-color: #4e5255;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.8em;
     position: relative;
+    height: 60px;
+    /* 高さを統一 */
 }
 
-/* メニューリスト */
+/* メニューリスト（デフォルトはPC向け横並び） */
 .nav-menu {
-    display: none;
-    flex-direction: column;
+    display: flex;
     list-style: none;
     padding: 0;
-    background-color: #4e5255;
-    position: absolute;
-    top: 60px;
-    left: 0;
+    justify-content: center;
     width: 100%;
-    text-align: center;
-    z-index: 1000;
+    max-width: 800px;
 }
 
-/* メニューを開いた状態 */
-.nav-menu.active {
-    display: flex;
-}
-
-/* メニュー項目 */
 .nav-menu li {
-    padding: 15px 0;
+    margin: 0 15px;
 }
 
 .nav-menu li a {
@@ -82,25 +73,42 @@ nav {
     cursor: pointer;
     padding: 10px;
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* スマホ用（600px以下） */
 @media (max-width: 600px) {
     .hamburger {
         display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #f8a3e0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
+    /* ハンバーガーメニュー（折りたたみ） */
     .nav-menu {
         display: none;
         flex-direction: column;
         background-color: #4e5255;
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
         text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-menu.active {
