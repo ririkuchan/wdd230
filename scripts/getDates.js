@@ -11,13 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
         lastModifiedSpan.textContent = document.lastModified;
     }
 
-    // Hamburger menu functionality
+    // ハンバーガーメニューの開閉処理
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
 
     if (hamburger && navMenu) {
         hamburger.addEventListener("click", function () {
+            console.log("Hamburger button clicked!"); // デバッグ用
             navMenu.classList.toggle("active");
+            console.log("Nav menu class list:", navMenu.classList); // デバッグ用
         });
+    } else {
+        console.error("Hamburger button or nav-menu not found.");
     }
 });

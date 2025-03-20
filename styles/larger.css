@@ -1,13 +1,13 @@
 @media (min-width: 768px) {
-
     nav {
         justify-content: center;
     }
 
-    nav ul {
+    .nav-menu {
         display: flex !important;
         justify-content: center;
         width: 100%;
+        position: static;
     }
 
     .hamburger {

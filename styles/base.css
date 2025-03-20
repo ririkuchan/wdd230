@@ -31,18 +31,32 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5em;
+    position: relative;
 }
 
 /* メニューリスト */
 .nav-menu {
-    display: flex;
+    display: none;
+    flex-direction: column;
     list-style: none;
     padding: 0;
+    background-color: #4e5255;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* メニューを開いた状態 */
+.nav-menu.active {
+    display: flex;
 }
 
 /* メニュー項目 */
 .nav-menu li {
-    margin: 0 10px;
+    padding: 15px 0;
 }
 
 .nav-menu li a {
@@ -67,6 +81,9 @@ nav {
     color: white;
     cursor: pointer;
     padding: 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
 }
 
 /* スマホ用（600px以下） */
@@ -93,18 +110,6 @@ nav {
     .nav-menu li {
         padding: 15px 0;
     }
-}
-
-/* メインコンテンツ */
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
-main img {
-    width: 300px;
-    height: auto;
 }
 
 /* フッター */
