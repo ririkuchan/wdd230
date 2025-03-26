@@ -1,0 +1,76 @@
+<!-- chamber/index.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce Home Page" />
+    <meta name="author" content="Ririku Shirakawa" />
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="../chamber/styles/bese.css" />
+    <link rel="stylesheet" href="../chamber/styles/larger.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 768px)">
+                <img src="images/hero-small.jpg" alt="Chamber Hero Image">
+            </picture>
+            <h2>Welcome to Your Local Chamber</h2>
+        </section>
+
+        <section class="cta">
+            <h2>Join the Chamber Today!</h2>
+            <p>Grow your network, build your business, and connect with the community.</p>
+            <button>Join Now</button>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p id="weather-desc">Loading ...</p>
+            <p id="temp"></p>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Monthly Business Mixer - July 18</li>
+                <li>Ribbon Cutting - August 1</li>
+                <li>Networking Breakfast - August 15</li>
+            </ul>
+        </section>
+
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-card">Company A - Great services!</div>
+            <div class="spotlight-card">Company B - Member since 2015</div>
+            <div class="spotlight-card">Company C - Community favorite</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Ririku Shirakawa | WDD 230 | Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

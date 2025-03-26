@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poetsen One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background-color: #9efcfd;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #94d2bd;
+    color: #000;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    background: #e0fbfc;
+    padding: 2rem;
+}
+
+.cta,
+.weather,
+.events,
+.spotlights {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #e9ecef;
+    border-left: 4px solid #0077b6;
+}

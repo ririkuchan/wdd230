@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+        display: flex !important;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .spotlights {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .spotlight-card {
+        flex: 1 1 30%;
+    }
+}
