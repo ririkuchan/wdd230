@@ -1,5 +1,5 @@
 body {
-    font-family: "Poetsen One", sans-serif;
+    font-family: Roboto, helvetica, sans-serif;
 }
 
 header,
@@ -9,9 +9,11 @@ footer {
     margin: 0 auto;
 }
 
-marquee {
-    padding: 1rem;
+.banner {
     background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 h1 {
@@ -20,11 +22,13 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 h2 {
     color: navy;
-    text-align: center;
+    text-align: left;
+    grid-column: 1 / span 2;
 }
 
 article p {
@@ -32,13 +36,14 @@ article p {
 }
 
 .callout {
-    color: #777;
+    color: #ffffff;
     background-color: #702963;
+    padding: 1rem;
 }
 
 footer {
     margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: smaller;
-    text-align: right;
+    text-align: left;
 }
