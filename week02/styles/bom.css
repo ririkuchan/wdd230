@@ -1,0 +1,55 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    background-color: #f3f1f1;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    background-color: #4e5255;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #c00;
+    cursor: pointer;
+}
