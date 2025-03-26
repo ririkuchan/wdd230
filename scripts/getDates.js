@@ -1,25 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // フッターに現在の年を設定
+    // 年・最終更新日
     const yearSpan = document.getElementById("year");
+    const lastModifiedSpan = document.getElementById("lastModified");
+
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
-
-    // 最終更新日を設定
-    const lastModifiedSpan = document.getElementById("lastModified");
     if (lastModifiedSpan) {
         lastModifiedSpan.textContent = document.lastModified;
     }
 
-    // ハンバーガーメニューの開閉処理
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("nav-menu");
+    // ハンバーガー
+    const menuButton = document.querySelector("#menu");
+    const navigation = document.querySelector(".navigation");
 
-    if (hamburger && navMenu) {
-        hamburger.addEventListener("click", function () {
-            navMenu.classList.toggle("active");
-        });
-    } else {
-        console.error("Hamburger button or nav-menu not found.");
-    }
+    menuButton.addEventListener("click", () => {
+        menuButton.classList.toggle("open");
+        navigation.classList.toggle("open");
+    });
 });

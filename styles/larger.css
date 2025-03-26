@@ -1,26 +1,26 @@
 @media (min-width: 768px) {
-    nav {
-        justify-content: center;
+    #menu {
+        display: none;
     }
 
-    .nav-menu {
-        display: flex !important;
-        justify-content: center;
-        width: 100%;
-        max-width: 900px;
-        position: static;
+    .navigation {
         flex-direction: row;
-        /* PC時は横並び */
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
-    .hamburger {
-        display: none !important;
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        max-width: 200px;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
