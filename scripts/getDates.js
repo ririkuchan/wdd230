@@ -17,5 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     menuButton.addEventListener("click", () => {
         menuButton.classList.toggle("open");
         navigation.classList.toggle("open");
+
+    });
+
+    //ダークモード
+    const darkToggle = document.getElementById("darkToggle");
+    const main = document.querySelector("main");
+
+    darkToggle.addEventListener("click", () => {
+        main.classList.toggle("dark");
+
     });
 });
