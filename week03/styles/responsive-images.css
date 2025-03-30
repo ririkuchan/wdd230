@@ -1,0 +1,47 @@
+/* 全体の初期スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poetsen One', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+    background-color: #004e89;
+    color: white;
+    padding: 1rem;
+}
+
+/* ヒーロー画像コンテナ */
+.hero {
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+/* レスポンシブ画像スタイル */
+.hero picture,
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
