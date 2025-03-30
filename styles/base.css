@@ -136,3 +136,17 @@ main.dark h1,
 main.dark h2 {
     color: #f1f1f1;
 }
+
+.webp-example picture {
+    display: block;
+    max-width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.webp-example img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
