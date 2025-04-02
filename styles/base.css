@@ -193,3 +193,22 @@ main.dark h2 {
     display: block;
     border-radius: 10px;
 }
+
+.sidebar {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

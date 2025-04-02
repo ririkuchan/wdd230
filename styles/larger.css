@@ -40,4 +40,8 @@
     .map-frame {
         height: 300px;
     }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

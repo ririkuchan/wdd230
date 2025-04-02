@@ -29,12 +29,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    const visitsDisplay = document.getElementById("visits");
-    let numVisits = Number(localStorage.getItem("visits-ls")) || 0;
 
-    if (visitsDisplay) {
-        visitsDisplay.textContent = numVisits;
-        numVisits++;
-        localStorage.setItem("visits-ls", numVisits);
-    }
 });

@@ -25,8 +25,21 @@ async function getWeather() {
         document.getElementById('weather-desc').textContent = data.weather[0].description;
         document.getElementById('temp').textContent = `${data.main.temp} ℃`;
     } catch (error) {
-        document.getElementById('weather-desc').textContent = '天気を取得できませんでした';
+        document.getElementById('weather-desc').textContent = 'Unable to get the weather data.';
     }
 }
 
 getWeather();
+
+const lastVisitDisplay = document.getElementById('lastVisit');
+let lastVisit = localStorage.getItem('lastVisit-ls');
+let now = Date.now();
+
+if (lastVisit) {
+    let days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+    lastVisitDisplay.textContent = `${days} day(s) ago`;
+} else {
+    lastVisitDisplay.textContent = "This is your first visit!";
+}
+localStorage.setItem('lastVisit-ls', now);
+
