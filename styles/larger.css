@@ -23,4 +23,21 @@
     h2 {
         font-size: 2rem;
     }
+
+    .overlay-text {
+        top: 5%;
+        /* 画面が狭いので少し上に */
+        left: 3%;
+        /* 左も少し詰める */
+        font-size: 1.2rem;
+        /* フォント少し小さく */
+        padding: 0.5rem 1rem;
+        /* パディングも調整 */
+        max-width: 80%;
+        /* はみ出し防止 */
+    }
+
+    .map-frame {
+        height: 300px;
+    }
 }

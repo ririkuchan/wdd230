@@ -155,25 +155,41 @@ main.dark h2 {
 
 .hero {
     position: relative;
+    /* 子要素の位置指定のために必要 */
     max-width: 100%;
+    overflow: hidden;
 }
 
-.hero picture,
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .overlay-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    top: 5%;
+    left: 5%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem 2rem;
+    /* 半透明の背景 */
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.map {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.map-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: 450px;
+    border: 0;
+    display: block;
     border-radius: 10px;
-    font-size: 1.8rem;
-    text-align: center;
 }
