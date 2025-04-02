@@ -28,4 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
         main.classList.toggle("dark");
 
     });
+
+    const visitsDisplay = document.getElementById("visits");
+    let numVisits = Number(localStorage.getItem("visits-ls")) || 0;
+
+    if (visitsDisplay) {
+        visitsDisplay.textContent = numVisits;
+        numVisits++;
+        localStorage.setItem("visits-ls", numVisits);
+    }
 });
