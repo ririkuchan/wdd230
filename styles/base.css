@@ -42,7 +42,6 @@ header img {
     cursor: pointer;
 }
 
-/* アイコン切り替え */
 #menu::before {
     content: "☰";
 }
@@ -56,7 +55,6 @@ nav {
     background-color: #4e5255;
     position: relative;
     padding: 3rem 1rem 1rem;
-    /* 上にボタン分の余白 */
 }
 
 .navigation {
@@ -64,8 +62,6 @@ nav {
     flex-direction: column;
     list-style: none;
     background-color: #4e5255;
-    padding: 0;
-    margin: 0;
     align-items: center;
     gap: 0.5rem;
 }
@@ -87,12 +83,10 @@ nav {
     font-weight: 700;
 }
 
-/* メニューが開いてるとき */
 .navigation.open a {
     display: block;
 }
 
-/* 現在ページ表示用マーカー */
 .navigation a.active::before {
     content: "📍 ";
 }
@@ -123,6 +117,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* ダークモード対応 */
 main.dark {
     background-color: #121212;
     color: #f1f1f1;
@@ -137,6 +132,7 @@ main.dark h2 {
     color: #f1f1f1;
 }
 
+/* WebP例 */
 .webp-example picture {
     display: block;
     max-width: 1000px;
@@ -153,9 +149,9 @@ main.dark h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Hero */
 .hero {
     position: relative;
-    /* 子要素の位置指定のために必要 */
     max-width: 100%;
     overflow: hidden;
 }
@@ -171,14 +167,14 @@ main.dark h2 {
     top: 5%;
     left: 5%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* 半透明の背景 */
     color: white;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 8px;
     font-size: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Google Map */
 .map {
     max-width: 100%;
     margin: 2rem auto;
@@ -188,12 +184,13 @@ main.dark h2 {
 .map-frame {
     width: 100%;
     aspect-ratio: 16 / 9;
-    height: 450px;
+    height: auto;
     border: 0;
     display: block;
     border-radius: 10px;
 }
 
+/* サイドバー */
 .sidebar {
     background: #fff;
     padding: 1rem;
@@ -201,28 +198,34 @@ main.dark h2 {
     border-radius: 10px;
 }
 
+/* ギャラリー全体 */
 .gallery {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
 }
 
+/* ギャラリーのグリッド */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 
+/* 画像ブロック */
 .gallery figure {
     margin: 0;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 4 / 3;
 }
 
+/* 画像サイズとアニメーション */
 .gallery img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
 }
@@ -231,6 +234,7 @@ main.dark h2 {
     transform: scale(1.05);
 }
 
+/* キャプション */
 .gallery figcaption {
     text-align: center;
     padding: 0.5rem;
