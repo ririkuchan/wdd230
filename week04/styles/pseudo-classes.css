@@ -1,0 +1,43 @@
+/* pseudo-classes.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+/* Focus effect for input */
+input:focus {
+    border: 2px solid royalblue;
+    outline: none;
+    background-color: #e7f0ff;
+}
+
+/* nth-child example for list items */
+ul li:nth-child(odd) {
+    background-color: #fff;
+}
+
+ul li:nth-child(even) {
+    background-color: #dfe6e9;
+}
+
+/* First-child selector */
+.box:first-child {
+    font-weight: bold;
+    color: teal;
+}
+
+.box:last-child {
+    color: crimson;
+}
