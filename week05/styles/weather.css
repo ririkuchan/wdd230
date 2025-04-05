@@ -1,0 +1,33 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+    color: #333;
+    padding: 2rem;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#weather-info {
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#weather-info p {
+    margin: 0.5rem 0;
+}
+
+#weather-info strong {
+    color: #00796b;
+}
