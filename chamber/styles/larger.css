@@ -1,21 +1,39 @@
 @media (min-width: 768px) {
-    .navigation {
-        flex-direction: row;
-        justify-content: center;
-        display: flex !important;
-    }
-
     #menu {
         display: none;
     }
 
-    .spotlights {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
-    .spotlight-card {
-        flex: 1 1 30%;
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .form-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .form-wrapper form {
+        flex: 2;
+    }
+
+    .form-wrapper .membership {
+        flex: 1;
     }
 }
