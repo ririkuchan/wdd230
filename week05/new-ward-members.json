@@ -1,0 +1,28 @@
+{
+    "familyName": "Yamada",
+    "moveInDate": "2023-04-06",
+    "numOfMembers": 4,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "Taro Yamada",
+            "gender": "male",
+            "birthdate": "1980-01-15"
+        },
+        {
+            "name": "Hanako Yamada",
+            "gender": "female",
+            "birthdate": "1982-03-22"
+        },
+        {
+            "name": "Ichiro Yamada",
+            "gender": "male",
+            "birthdate": "2010-07-30"
+        },
+        {
+            "name": "Sakura Yamada",
+            "gender": "female",
+            "birthdate": "2013-11-05"
+        }
+    ]
+}
