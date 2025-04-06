@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "MUJI (無印良品)",
+            "address": "2-5-1 Koraku, Bunkyo-ku, Tokyo 112-0004, Sumitomo Fudosan Iidabashi First Building",
+            "phone": "03-6694-6404",
+            "website": "https://www.muji.com/jp/",
+            "logo": "muji-logo.jpg",
+            "membership": "Silver",
+            "description": "A lifestyle brand offering a wide range of simple and functional household goods, furniture, and clothing."
+        },
+        {
+            "name": "All Nippon Airways (ANA)",
+            "address": "1-5-2 Higashi-Shimbashi, Minato-ku, Tokyo 105-7140, Shiodome City Center",
+            "phone": "03-6735-1000",
+            "website": "https://www.ana.co.jp/",
+            "logo": "ana-logo.gif",
+            "membership": "Platinum",
+            "description": "A major Japanese airline offering domestic and international air transportation services."
+        },
+        {
+            "name": "Rakuten",
+            "address": "1-14-1 Tamagawa, Setagaya-ku, Tokyo 158-0094, Rakuten Crimson House",
+            "phone": "050-5581-6910",
+            "website": "https://www.rakuten.co.jp/",
+            "logo": "rakuten-logo.png",
+            "membership": "Gold",
+            "description": "Japan’s largest internet service company offering e-commerce, fintech, and various digital services."
+        },
+        {
+            "name": "SoftBank",
+            "address": "1-7-1 Kaigan, Minato-ku, Tokyo 105-7529",
+            "phone": "03-6889-2000",
+            "website": "https://www.softbank.jp/",
+            "logo": "softbank_logo.jfif",
+            "membership": "Gold",
+            "description": "A leading telecommunications company in Japan providing mobile and internet services."
+        },
+        {
+            "name": "Sony",
+            "address": "1-7-1 Konan, Minato-ku, Tokyo 108-0075, Sony City",
+            "phone": "03-6748-2111",
+            "website": "https://www.sony.co.jp/",
+            "logo": "sony-logo.jpg",
+            "membership": "Platinum",
+            "description": "A global electronics and entertainment company, known for innovations in gaming, music, and film."
+        },
+        {
+            "name": "Shiseido",
+            "address": "7-5-5 Ginza, Chuo-ku, Tokyo 104-0061",
+            "phone": "03-3572-5111",
+            "website": "https://www.shiseido.co.jp/",
+            "logo": "shiseido-logo.jpg",
+            "membership": "Silver",
+            "description": "One of Japan's leading cosmetic companies, offering skincare, makeup, and beauty products worldwide."
+        },
+        {
+            "name": "Square Enix",
+            "address": "6-27-30 Shinjuku, Shinjuku-ku, Tokyo 160-8430, East Side Square",
+            "phone": "03-5292-8000",
+            "website": "https://www.jp.square-enix.com/",
+            "logo": "square-enix-logo.webp",
+            "membership": "Bronze",
+            "description": "A well-known game developer famous for franchises such as Final Fantasy and Dragon Quest."
+        },
+        {
+            "name": "Japanese Red Cross Society",
+            "address": "1-1-3 Shiba Daimon, Minato-ku, Tokyo 105-8521",
+            "phone": "03-3438-1311",
+            "website": "https://www.jrc.or.jp/",
+            "logo": "redcross-logo.jpg",
+            "membership": "NP",
+            "description": "A non-profit humanitarian organization engaged in disaster relief, medical care, and blood donation services."
+        }
+    ]
+}
