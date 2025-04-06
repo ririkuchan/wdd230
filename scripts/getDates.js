@@ -6,28 +6,40 @@ document.addEventListener("DOMContentLoaded", function () {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
+
     if (lastModifiedSpan) {
         lastModifiedSpan.textContent = document.lastModified;
     }
 
-    // ハンバーガー
+    // ハンバーガーメニュー
     const menuButton = document.querySelector("#menu");
     const navigation = document.querySelector(".navigation");
 
-    menuButton.addEventListener("click", () => {
-        menuButton.classList.toggle("open");
-        navigation.classList.toggle("open");
+    if (menuButton && navigation) {
+        menuButton.addEventListener("click", () => {
+            menuButton.classList.toggle("open");
+            navigation.classList.toggle("open");
+        });
+    }
 
-    });
-
-    //ダークモード
+    // ダークモード
     const darkToggle = document.getElementById("darkToggle");
     const main = document.querySelector("main");
 
-    darkToggle.addEventListener("click", () => {
-        main.classList.toggle("dark");
+    if (darkToggle && main) {
+        darkToggle.addEventListener("click", () => {
+            main.classList.toggle("dark");
+        });
+    }
 
-    });
+    // Visit Counter (localStorage使用)
+    const visitsDisplay1 = document.querySelector("#visits"); // 情報カード用
+    const visitsDisplay2 = document.querySelector("#visits-total"); // もう1箇所表示用（あれば）
 
+    let visitCount = Number(localStorage.getItem("visits-count")) || 0;
+    visitCount++;
+    localStorage.setItem("visits-count", visitCount);
 
+    if (visitsDisplay1) visitsDisplay1.textContent = visitCount;
+    if (visitsDisplay2) visitsDisplay2.textContent = visitCount;
 });
