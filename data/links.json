@@ -78,6 +78,10 @@
                 {
                     "label": "Consuming a Weather API",
                     "url": "week05/weather.html"
+                },
+                {
+                    "label": "The Chamber Directory Page",
+                    "url": "chamber/directory.html"
                 }
             ]
         }
