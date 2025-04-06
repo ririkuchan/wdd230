@@ -257,3 +257,56 @@ main.dark h2 {
     width: 50px;
     height: 50px;
 }
+
+#activity-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 各週のグループ（横並び用） */
+.week-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+#activity-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* 画面幅に合わせる */
+    max-width: none;
+    /* 最大幅の制限を外す */
+    margin: 0;
+    /* ← 中央寄せを解除！ */
+}
+
+.week-group li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.week-group a {
+    text-decoration: none;
+    color: #005f73;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.week-group a:hover {
+    color: #0a9396;
+}

@@ -1,0 +1,85 @@
+{
+    "weeks": [
+        {
+            "week": "Week 01",
+            "links": [
+                {
+                    "label": "Activity",
+                    "url": "week01/activity.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                {
+                    "label": "Activity",
+                    "url": "week02/activity.html"
+                },
+                {
+                    "label": "\ud83d\udcd8 BOM Favorite Chapters",
+                    "url": "week02/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                {
+                    "label": "WebP",
+                    "url": "week03/images/landscape.webp"
+                },
+                {
+                    "label": "Lazy Load",
+                    "url": "week03/lazyload.html"
+                },
+                {
+                    "label": "Responsive Images",
+                    "url": "week03/responsive-images.html"
+                },
+                {
+                    "label": "\ud83d\udcd8 BOM Favorite Chapters",
+                    "url": "week03/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                {
+                    "label": "CSS Pseudo-Classes",
+                    "url": "week04/pseudo-classes.html"
+                },
+                {
+                    "label": "Table Build",
+                    "url": "week04/tablebuild.html"
+                },
+                {
+                    "label": "Form Practice",
+                    "url": "week04/form-start.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                {
+                    "label": "Pseudo-Element Activity",
+                    "url": "https://codepen.io/blazzard-jason/pen/LYjLRqN"
+                },
+                {
+                    "label": "New Ward Members JSON",
+                    "url": "week05/new-ward-members.json"
+                },
+                {
+                    "label": "The Fetch API",
+                    "url": "week05/prophets.html"
+                },
+                {
+                    "label": "Consuming a Weather API",
+                    "url": "week05/weather.html"
+                }
+            ]
+        }
+    ]
+}
