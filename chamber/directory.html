@@ -2,19 +2,26 @@
 <html lang="en-US">
 
 <head>
-    <link rel="stylesheet" href="../styles/normalize.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="This is the business directory page for the Tokyo Chamber. Browse member companies and explore their services.">
+        content="Explore the Tokyo Chamber of Commerce Business Directory created by Ririku Shirakawa for WDD 230. Browse member profiles, addresses, and contact info.">
     <meta name="author" content="Ririku Shirakawa">
+
+    <title>Tokyo Business Chamber Directory - Ririku Shirakawa</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/larger.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    <title>Tokyo Chamber Directory - Ririku Shirakawa</title>
-    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Ririku Shirakawa - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ririkuchan.github.io/wdd230/images/hometown.jpg">
@@ -41,12 +48,14 @@
     <main>
         <h1>Business Directory</h1>
 
-        <div class="view-toggle">
+        <section class="view-toggle">
             <button id="cardView">Card View</button>
             <button id="listView">List View</button>
-        </div>
-        <div id="directory" class="cards"></div>
+        </section>
 
+        <section id="directory" class="cards">
+            <!-- Business cards will be inserted here by JavaScript -->
+        </section>
     </main>
 
     <footer>
@@ -55,6 +64,7 @@
         </p>
     </footer>
 
+    <!-- Scripts -->
     <script src="../scripts/getDates.js"></script>
     <script src="../scripts/weather.js"></script>
     <script src="../scripts/links.js"></script>
